@@ -1,0 +1,14 @@
+package ngoding ;
+
+public class inran {
+    
+    public static void main(String[] args) {
+        String nama = "Imran";
+        System.out.println("Nama\t = " + nama);
+        String Alamat = "Malunda";
+        System.out.println("Alamat\t = " + Alamat);
+        int umur = 18;
+        System.out.println("umur\t = " + umur);
+    }
+    
+}
