@@ -1,0 +1,32 @@
+package ngoding ;
+
+public class dua {
+    
+    public static void main(String[] args) {
+    System.out.println("tipe data bilangan bulat");
+        byte angka = 100; 
+        short angka1 = 16783;
+        int angka2 = 1243575854;
+        long angka3 = 1232376647786467658l;
+        
+     //bilangan desimal
+        double tinggi = 167.5;
+        float berat = 56.4f;
+        
+      //tipe data boolean
+        int nilai = 2;
+        nilai = 3;
+        System.out.println(nilai>3);
+        //diatas contoh tipe data boolean
+        
+        
+        char kelamin = 'L';
+        //tipe data primitif
+        
+        String nama = "imran";
+        // String merupakan tipe data non primitif
+        
+        
+    }
+    
+}
