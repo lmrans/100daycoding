@@ -1,0 +1,17 @@
+package empat;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+        String nama, tinggal;
+        int umur;
+        System.out.print("nama : ");
+        nama = input.nextLine();
+        System.out.print("Tinggal : ");
+        tinggal = input.nextLine();
+        System.out.print("umur : ");
+        umur = input.nextInt();
+    }
+    
+}
