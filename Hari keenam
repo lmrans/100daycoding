@@ -1,0 +1,19 @@
+package ngoding ;
+
+public class keenam {
+    public static void main(String[]args){
+        
+        String nama_depan, nama_belakang, nama_lengkap;
+        nama_depan = "uzumaki";
+        nama_belakang = "naruto";
+        System.out.print("nama depan : ");
+        System.out.println(nama_depan);
+        System.out.print("nama belakang : ");
+        System.out.println(nama_belakang);
+        nama_lengkap = nama_depan + " " + nama_belakang;
+        System.out.print("nama lengkap : ");
+        System.out.print(nama_lengkap);
+        
+        
+    } 
+}
