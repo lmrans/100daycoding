@@ -1,0 +1,22 @@
+package ngoding ;
+import java.util.Scanner;
+public class ke7 {
+    public static void main(String[]args){
+     Scanner input = new Scanner(System.in);
+        int s, L, K;
+        s = input.nextInt();
+        L = s * s;
+        K = 4 * s;
+        System.out.print("Luas kubus : ");
+        System.out.println(L);
+        System.out.print("Keliling kubus : ");
+        System.out.println(K);
+        
+        
+        
+        
+        
+        
+        
+    }
+}
