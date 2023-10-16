@@ -1,0 +1,19 @@
+package ngoding ;
+
+public class ke8 {
+    
+    public static void main(String[]args){
+        int L, p, l, k;
+        p = 5;
+        L = 7;
+        l = p * L;
+        k = 2 + (p * L);
+        System.out.println("Luas persegi panjang : " + l);
+        System.out.println("keliling persegi panjang : " + k);
+        
+        
+        
+        
+        
+    }  
+}
