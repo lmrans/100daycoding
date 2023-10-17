@@ -1,0 +1,28 @@
+package ngoding ;
+
+public class ke9  { 
+
+public static void main(String[]args) {
+    System.out.println(">>>>>>>>>>>>>>>DATA DIRI<<<<<<<<<<<<<<<");
+  String nama = "IMRAN";
+   String nim = "D0223326"; 
+    System.out.println("NAMA \t\t:" + nama);
+    System.out.println("NIM \t\t:" + nim);
+    int umur = 19;
+    String kelas = "INFORMATIKA B 2023";
+    float bb = 56.5f;
+    double Tb = 160.0;
+    System.out.println("umur \t\t:" + umur +" Tahun");
+    System.out.println("kelas \t\t:" + kelas);
+    System.out.println("berat badan \t:" + bb +" kg");
+    System.out.println("tinggi badan \t:" + Tb +" cm");
+    float bmi = 43.4f;
+    System.out.println("BMI \t\t:" + bmi);
+    String alamat = "DESA LOMBONG TIMUR";
+    System.out.println("Alamat \t\t:" + alamat);
+    
+    
+
+}
+    
+}
