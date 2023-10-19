@@ -1,0 +1,36 @@
+package ngoding ;
+
+public class ke11 {
+    public static void main(String[]args){
+        //operator perbandingan (tidak) simbol !
+        boolean gagal = true;
+        boolean nilai = !gagal;
+        System.out.println(nilai);
+        System.out.println(gagal);
+        //operator perbandingan (dan) simbol && 
+        int a,b;
+        a = 7;
+        b = 6;
+        boolean c = a>b;
+        boolean n = a!=b;
+        boolean h = a<=b;
+        System.out.println(c&&n);
+        System.out.println(n&&h);
+        System.out.println(h&&c);
+        //operator perbandingan (atau) simbol ||
+        boolean horizontal = true;
+        boolean vertikal = false;
+        boolean demon = false;
+        boolean ghost = true;
+        System.out.println(horizontal || vertikal);
+        System.out.println(vertikal || demon);
+        System.out.println(horizontal || ghost);
+        
+        
+        
+        
+        
+        
+        
+    }
+}
