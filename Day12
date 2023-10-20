@@ -1,0 +1,17 @@
+package ngoding ;
+import java.util.Scanner;
+public class ke12 {
+    public static void main(String[]args){
+       Scanner key = new Scanner(System.in);
+        System.out.println("===hutang===");
+        int poin;
+        int hutang = 10000;
+        System.out.print("masukkan uang : ");
+        poin = key.nextInt();
+        String jumlah = poin > hutang?"sudah lunas":"belum lunas";
+        System .out.println("hutang kamu " +jumlah);
+        System.out.println("selamat hutang anda "+jumlah);
+        
+        // diatas adalah contoh penggunaan oprator ternary
+    } 
+}
