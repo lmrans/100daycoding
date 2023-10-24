@@ -1,0 +1,17 @@
+package ngoding;
+import java.util.Scanner;
+public class day16 {
+    public static void main(String[]args){
+        Scanner gol = new Scanner(System.in);
+        System.out.print("masukkan nominal : ");
+        int bayar = gol.nextInt();
+        if(bayar < 50000 || bayar > 40000){
+            System.out.println("sudah lunas");
+        }else if(bayar > 10000 || bayar > 30000){
+            System.out.println("belum lunas");
+        }
+        
+        
+    }
+    
+}
