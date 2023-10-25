@@ -1,0 +1,19 @@
+package ngoding ;
+import java.util.Scanner;
+public class day17 {
+    public static void main(String[]args){
+        Scanner put = new Scanner(System.in);
+        System.out.print("luas tanah = ");
+        double LT = put.nextDouble();
+        System.out.print("jumlah pajak = " );
+        int pajak = put.nextInt();
+        if(pajak >= 20000){
+            System.out.println("kena pajak");
+        }else if(pajak >= 50000){
+            System.out.println("tidak kena pajak");
+        }
+        
+        
+    }
+    
+}
