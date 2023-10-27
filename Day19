@@ -1,0 +1,33 @@
+package ngoding ;
+import java.util.Scanner;
+public class day19 {
+    public static void main(String[]args){
+        double harga = 0;
+        int pilihan, porsi;
+        String menu = null;
+        Scanner input = new Scanner(System.in);
+        System.out.println("==menu makanan==");
+        System.out.println("1.ayam goreng \n2.tahu bulat \n3.soto");
+        System.out.print("pilhan makanan  : ");
+        pilihan = input.nextInt();
+        System.out.print("porsi makanan   : ");
+        porsi = input.nextInt();
+        if (pilihan == 1){
+            menu = "ayam goreng";
+            harga = 7000;
+        }else if(pilihan == 2){
+           menu = "tahu bulat"; 
+           harga = 8000;
+        }else if(pilihan == 3){
+            menu = "soto";
+            harga = 10000;
+        }
+        System.out.println("==============");
+        System.out.println("menu pilihan :");
+        System.out.println(menu+" Rp."+ harga +" /porsi");
+        harga = harga * porsi;
+        System.out.println("porsi : Rp."+ harga);
+        
+        
+    }
+}
