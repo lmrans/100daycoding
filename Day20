@@ -1,0 +1,37 @@
+package ngoding ;
+import java.util.Scanner;
+public class day20 {
+    public static void main(String[]args){
+        Scanner material = new Scanner(System.in);
+        int pilihan, jumlah;
+        double harga = 0;
+        String proyek = null;
+        System.out.println(">>>>>material proyek<<<<<");
+        System.out.println("1. semen \n2. besi \n3. cat \n4. paku");
+        System.out.print("pilihan  : ");
+        pilihan = material.nextInt();
+        System.out.print("jumlah   : ");
+        jumlah = material.nextInt();
+        if(pilihan == 1){
+           proyek = "semen";
+            harga = 50000;
+        }else if(pilihan == 2){
+            proyek = "besi";
+            harga = 70000;
+        }else if(pilihan == 3){
+            proyek = "cat";
+            harga = 20000;
+        }else if(pilihan == 4){
+          proyek = "paku";
+        harga = 2000;
+        }
+        System.out.println(">>>>>>>>>><<<<<<<<<<");
+        System.out.println("bahan proyek : ");
+        System.out.println(proyek + " Rp."+harga+" /1× ");
+        harga = harga * jumlah;
+        System.out.println("jumlah : " + harga);
+        
+        
+    }
+    
+}
