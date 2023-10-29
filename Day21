@@ -1,0 +1,15 @@
+package ngoding ;
+import java.util.Scanner;
+public class day21 {
+    public static void main(String[]args){
+        Scanner war = new Scanner(System.in);
+        int A,T,L;
+        System.out.print("alas : ");
+        A = war.nextInt();
+        System.out.print("tinggi : ");
+        T = war.nextInt();
+        L = A * T;
+        System.out.println("Luas : Alas × tinggi = "+ L);
+    }
+    
+}
