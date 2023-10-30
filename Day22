@@ -1,0 +1,20 @@
+package ngoding ;
+
+public class day22 {
+    public static void main(String[]argd){
+        int []b = {3,5,9,1};
+        System.out.println(b[0]);
+        System.out.println(b[1]);
+        System.out.println(b[2]);
+        System.out.println(b[3]);
+        
+        int[] a = new int[2];
+        a[0] = 7;
+        a[1] = 8;
+        System.out.println(a[1]);
+        String g [] = {"good","nice","baik"};
+        System.out.println(g[2]);
+        
+    }
+    
+}
