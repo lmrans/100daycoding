@@ -1,0 +1,22 @@
+package ngoding ;
+
+public class harikeduaenam {
+    public static void main(String[]args){
+      int nilai = 3;
+      if(nilai>2){
+          System.out.println("salah");
+       }else if(nilai>3){
+        System.out.println("banar");
+        }else{
+           System.out.println("cocok");
+        }
+        
+        for(int i = 0; i<14;i+=2){
+            System.out.println(i);
+        }
+        
+        for(int t = 1; t<14;t+=2){
+            System.out.println(t);
+        }
+    }
+}
