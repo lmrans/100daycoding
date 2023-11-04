@@ -1,0 +1,24 @@
+package ngoding ;
+import java.util.Scanner;
+public class dayduatujuh {
+    public static void main(String[]args){
+        Scanner code = new Scanner(System.in);
+        System.out.print("Enter numbers 1 : ");
+        double num1 = code.nextDouble();
+        System.out.print("Enter numbers 2 : ");
+        double num2 = code.nextDouble();
+        
+        double summation = num1 + num2;
+        double subtraction = num1 - num2;
+        double multiplication = num1 * num2;
+        double distribution = num1 / num2;
+        double remainder = num1 % num2;
+        
+        System.out.println("result of num1 + num2 = " + summation );
+        System.out.println("result of num1 - num2 = " + subtraction);
+        System.out.println("result of num1 × num2 = " + multiplication);
+        System.out.println("result of num1 ÷ num2 = " + distribution);
+        System.out.println("remainder from num 1 and num 2 = " + remainder);
+    }
+    
+}
