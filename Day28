@@ -1,0 +1,19 @@
+package ngoding ;
+public class hariduadelapan {
+    public static void main(String[]args){
+        double buka = 14500;
+     System.out.println(buka);
+     float in = (float)buka;
+     System.out.println(in);         
+     long Lo = (long)in;
+     System.out.println(Lo);
+     int tejer = (int)Lo;
+     System.out.println(tejer);
+     short Hort = (short)tejer;
+     System.out.println(Hort);
+     byte Yte = (byte)Hort;
+     System.out.println(Yte);
+      
+    }
+    
+}
