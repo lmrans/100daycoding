@@ -1,0 +1,47 @@
+package ngoding ;
+import java.util.Scanner;
+public class hariduasembilan {
+    public static void main(String[]args){
+        Scanner dor = new Scanner(System.in);
+        long harga,total =0;
+        int gandum;
+        double diskon;
+        System.out.println("==================================");
+        System.out.println("-----------TOKO GANDUM-----------");
+        System.out.println("---------------------------------");
+        System.out.println("<<<<<<<DISKON!!>>>>>>");
+        System.out.println("==================================");
+        System.out.println("diskon 14% untuk yang membeli 50");
+        System.out.println("diskon 20% untuk yang membeli 100");
+        System.out.println("harga : 30.000/1");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        
+        harga = 30000;
+        System.out.print("jumlah gandum : ");
+        gandum = dor.nextInt();
+        diskon = 0;
+        
+        if(gandum>=50&&gandum<100){
+            System.out.println("anda mendapat diskon 14% ");
+            diskon = 0.1*(gandum * harga);
+           long diskon2 = (long)diskon;
+            total =(harga * gandum)-diskon2;
+        }else if(gandum>=100){
+            System.out.println("---------------------------");
+            System.out.println("anda mendapat diskon 20% ");
+        diskon = 0.20*(gandum * harga);
+             long diskon2 = (long)diskon;
+        total = (harga * gandum)-diskon2;
+        }else{
+            System.out.println("------------------------");
+            System.out.println("anda tidak dapat diskon");
+            total = harga * gandum;
+        }
+        System.out.println("-------------------------------");
+        System.out.println("harga yang harus di bayar : " + total);
+        
+        
+        
+    }
+    
+}
