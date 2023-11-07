@@ -1,0 +1,23 @@
+package ngoding ;
+
+public class haritigapuluh {
+    public static void main(String[]args){
+        int gaji = 1200000;
+        int makan = 15000;
+        int hari  = 25;
+        int gaji25hari = hari * gaji;
+        int uangmakan = makan * hari;
+        int gajibersih = gaji25hari - uangmakan;
+        
+        System.out.println("~~~~~Gaji karyawan~~~~~");
+        System.out.println("gaji kotor perhari: 1200000");
+        System.out.println("uang makan        : 15000");
+        System.out.println("jumlah hari kerja : "+hari);
+        System.out.println("jumlah gaji kotor : "+gaji25hari);
+        System.out.println("jumlah uang makan : "+ uangmakan);
+        System.out.println("jumlah gaji bersih: " + gajibersih);
+        
+        
+    }
+    
+}
