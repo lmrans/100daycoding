@@ -1,0 +1,32 @@
+package ngoding ;
+import java.util.Scanner;
+public class terimagaji {
+    public static void main(String[]args){
+        Scanner dor = new Scanner(System.in);
+        int gaji = 0;
+        System.out.println("~~~~~~~~GAJI KARYAWAN~~~~~~~~");
+            System.out.print("jumlah karyawan : ");
+            int jk = dor.nextInt();
+        
+        for(int a = 0; a<jk;a++){
+         System.out.print("karyawan : ");
+          int karyawan = dor.nextInt();
+            System.out.print("jumlah hari kerja : ");
+            int harikerja = dor.nextInt();
+            int gajikotor = 120000;
+            int totalmakan = 15000;
+            int gajitotal = gajikotor - totalmakan;
+            int gajibersih = harikerja * gajitotal;
+            gaji += gajibersih;
+            
+            System.out.println("gaji bersih karyawan : "+gajibersih);
+            System.out.println("gaji kotor perhari   : "+gajikotor);
+            System.out.println("uang makan perhari   : "+totalmakan);
+        }
+        System.out.println("••••••••••••••••••••••••••••••••••••••••");
+        System.out.println("slip gaji yang harus disiapkan perusahaan :"+gaji);
+            
+        
+    }
+    
+}
