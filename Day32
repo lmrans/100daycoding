@@ -1,0 +1,14 @@
+package ngoding ;
+
+public class haritigadua {
+    public static void main(String[]args){
+        int z = 5;
+        for(int i = 1; i<=z;i++){
+            for(int r = i;r>=1;r--){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
