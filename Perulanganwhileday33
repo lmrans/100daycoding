@@ -1,0 +1,23 @@
+package ngoding ;
+import java.util.Scanner;
+public class hari33 {
+    public static void main(String[]args){
+        Scanner war = new Scanner(System.in);
+        int awal,akhir;
+        System.out.print("awal : ");
+        awal = war.nextInt();
+        System.out.print("akhir : ");
+        akhir = war.nextInt();
+        int x = awal;
+        while(x <= akhir){
+         int hasil = x % 4;
+            if(hasil == 1)  {
+                System.out.print(x+" ");
+            }
+            x++;
+        }
+        System.out.println("");
+        
+    }
+    
+}
