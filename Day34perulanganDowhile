@@ -1,0 +1,21 @@
+package ngoding ;
+import java.util.Scanner;
+public class day34 { 
+    public static void main(String[]args){
+        Scanner min = new Scanner(System.in);
+        int awal,akhir;
+        System.out.print("awal bilangan : ");
+        awal = min.nextInt();
+        System.out.print("akhir bilangan : ");
+        akhir = min.nextInt();
+        do{
+           System.out.println(awal); 
+          awal++;  
+        }while(awal <= akhir);
+            System.out.println();
+        
+        
+        
+    }
+    
+}
