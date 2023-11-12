@@ -1,0 +1,25 @@
+package ngoding ;
+import java.util.Scanner;
+public class day35 {
+    public static void main(String[]args){
+        String nama,alamat,masukkan,nohp;
+        do{
+            Scanner you = new Scanner(System.in);
+            System.out.print("nama   : ");
+            nama = you.nextLine();
+            System.out.print("alamat : ");
+            alamat = you.nextLine();
+            System.out.print("no hp  : ");
+            nohp = you.nextLine();
+            System.out.println(nama+" tinggal di "+alamat+" dan memiliki nomor hp "+nohp);
+            System.out.println("~~~~~~~~~~~~~~~~~~~~");
+            System.out.print("masukkan y/n: ");
+            masukkan = you.nextLine();
+        }while(masukkan.equalsIgnoreCase("y"));
+        System.out.println("program nama,alamat dan nomor hp selesai");
+        
+        
+        
+    }
+    
+}
