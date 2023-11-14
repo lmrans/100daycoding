@@ -1,0 +1,23 @@
+package ngoding ;
+import java.util.Scanner;
+public class day37 {
+    public static void main(String[]args){
+        Scanner war = new Scanner(System.in);
+        System.out.print("nilai a : ");
+        int a = war.nextInt();
+        System.out.print("nilai b : ");
+        int b = war.nextInt();
+         boolean c = a>=b;
+        boolean d = a<=b;
+        if(c && d){
+            System.out.println("true");
+        }else if(c||d){
+            System.out.println("false");
+        }else
+        System.out.println("selesai");
+        
+        
+        
+    }
+    
+}
