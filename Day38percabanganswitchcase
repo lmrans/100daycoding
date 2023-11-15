@@ -1,0 +1,40 @@
+package ngoding ;
+import java.util.Scanner;
+public class day38 {
+    public static void main(String[]args){
+        Scanner war = new Scanner(System.in);
+        System.out.print("menu game = ");
+        int menu = war.nextInt();
+        System.out.println("----------------");
+        int buah,total, harga = 0;
+        switch(menu){
+            case 1:
+            System.out.println("game = GOD OF WAR");
+            System.out.print("Berapa buah = ");
+            buah = war.nextInt();
+            harga = 50000 * buah;
+            total = harga;
+            System.out.println("total pembelian ="+harga);
+            break;
+            case 2:
+            System.out.println("game = GOD HAND");
+            System.out.print("berapa buah = ");
+            buah = war.nextInt();
+            harga = 60000 * buah;
+            total = harga;
+            System.out.println("total pembelian = "+harga);
+            break;
+            case 3:
+            System.out.println("game = MORTAL KOMBAT");
+            System.out.println("berapa buah = ");
+            buah = war.nextInt();
+            harga = 70000 * buah;
+            total = harga;
+            System.out.println("total pembelian = ");
+            break;
+              default:
+            System.out.println("game invalid");
+        }
+    }
+    
+}
