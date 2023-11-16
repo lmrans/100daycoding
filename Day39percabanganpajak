@@ -1,0 +1,29 @@
+package ngoding ;
+import java.util.Scanner;
+public class day39 {
+    public static void main(String[]args){
+        long sks,harga,total = 0;
+        double pajak;
+        Scanner war = new Scanner(System.in);
+        System.out.println("----struk gaji karyawan-----");
+        System.out.println("pak dosen ");
+        System.out.println("dosen mengajar dalam 1 semester");
+        System.out.println("----------------------------");
+        System.out.print("jumlah sks : ");
+        sks = war.nextInt();
+        harga = 500000;
+        pajak = 0;
+        total = 0;
+        if(sks < 4){
+            System.out.println("bebas pajak");
+        }else if(sks > 4){
+            System.out.println("kena pajak 10%");
+        pajak = 0.10*(sks * harga);
+        long pajak2 = (long)pajak;
+        total = (harga * sks)-pajak2;
+    }
+        System.out.println("harga 1 sks yaitu : "+harga);
+        System.out.println("dosen membayar sks yg lebih adalah "+total);
+    
+    } 
+}
