@@ -1,0 +1,19 @@
+package ngoding ;
+
+public class day40 {
+    public static void main(String...args){
+         int i,j;
+        boolean cek;
+        for(i=2;i<100;i++){
+            cek = true;
+            for(j=2;j<=(i/2);j++){
+                if(i%j==0){
+                    cek = false;
+                    break;
+                }
+            }
+            if(cek)
+                System.out.print(i+" ");
+        }
+    }
+}
