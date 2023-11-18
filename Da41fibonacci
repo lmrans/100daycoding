@@ -1,0 +1,25 @@
+package ngoding ;
+import java.util.Scanner;
+public class da41 {
+    public static void main(String[]args){
+        Scanner ror = new Scanner(System.in);
+        int r1 = 0;
+        int r2 = 1;
+        System.out.print("masukkan angka = ");
+        int r = ror.nextInt();
+        System.out.println("~~~~~~~~~~~~~~");
+        int rn;
+        System.out.println("urutan fibonacci");
+        System.out.println("~~~~~~~~~~~~~~~");
+        System.out.print(r1+" ");
+        System.out.print(r2);
+        for(int a = 1; a<r;a++){
+           rn = r1 + r2;
+            System.out.print(" "+rn);
+            r1 = r2;
+            r2 = rn;
+        }
+        System.out.print("");
+    }
+    
+}
