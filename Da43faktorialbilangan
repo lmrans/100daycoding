@@ -1,0 +1,25 @@
+package ngoding ;
+import java.util.Scanner;
+public class da43 {
+    public static void main(String[]args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("masukkan bilangan : ");
+        int bilangan = input.nextInt();
+        int jumlah = bilangan;
+        System.out.print(bilangan+"! = ");
+        for(int a = bilangan; a>0 ;a--){
+            System.out.print(a);
+            if(a > 1){
+               System.out.print(" × "); 
+            }
+            if(bilangan != a){
+                jumlah *= a;
+            }
+        }
+        System.out.println();
+       System.out.print("jumlah : "+jumlah);
+        
+        
+    }   
+        
+}
