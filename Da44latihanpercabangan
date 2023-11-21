@@ -1,0 +1,28 @@
+package ngoding;
+import java.util.Scanner;
+public class diskon {
+    public static void main(String[]args){
+        Scanner masuk = new Scanner(System.in);
+        double diskon = 0.20;
+        double harga = 300000;
+        System.out.println(" Toko baju ");
+        System.out.println("diskon 20%");
+        System.out.print("total belanja park : ");
+        double r = masuk.nextInt();
+        System.out.print("total belanja kim : ");
+        double m = masuk.nextDouble();
+        double total = r + m;
+        
+        if(harga <= total){
+            System.out.println("anda mendapatkan diskon 20%");
+             diskon = 0.20 * total;
+            
+        }else{
+            System.out.println("anda tidak mendapatkan diskon");
+            System.out.println("total belanja tanpa diskon " + total);
+        }
+        total -= diskon;
+        System.out.println("harga setelah diskon "+total);
+        
+    }
+}
