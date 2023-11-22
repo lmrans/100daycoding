@@ -1,0 +1,25 @@
+package ngoding ;
+import java.util.Scanner;
+public class da45 {
+    public static void main(String[]args){
+        Scanner war = new Scanner(System.in);
+        System.out.print("nilai kamu : ");
+        int nilai = war.nextInt();
+        String standar = null;
+        if(nilai >= 100){
+            standar = "dapat A+ sangat baik";
+        }else if(nilai >= 90){
+            standar = "dapat A baik";
+        }else if(nilai >= 80){
+            standar = "dapat A- lumayan baik";
+        }else if(nilai >= 70){
+            standar = "dapat B kurang baik";
+        }else if(nilai >= 60){
+            standar = "dapat C kurang";
+        }else if(nilai < 50){
+            standar = "anda tidak lulus";
+        }
+        System.out.println("nilai       : "+nilai);
+        System.out.println("standar kkm : "+ standar);
+    }
+}
