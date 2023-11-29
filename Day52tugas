@@ -1,0 +1,16 @@
+package ngoding ;
+import java.util.Scanner;
+public class tugas {
+    public static void main(String[]args){
+        Scanner input = new Scanner(System.in);
+        int angka;
+        for(;;){
+            System.out.print("masukkan nilai : ");
+            angka = input.nextInt();
+            if(angka >= 40 && angka <= 90){
+                System.out.print("angka benar : "+angka);
+                break;
+            }
+        }
+    }
+}
