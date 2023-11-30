@@ -1,0 +1,32 @@
+package ngoding ;
+import java.util.Scanner;
+public class day54 {
+    public static void main(String[]args){
+        int[] z = {10,20,30,50,70,100};
+        Scanner masuk = new Scanner(System.in);
+        int lihat;
+        int count = 0;
+        System.out.println("pilih : ");
+        for(int i = 0; i < z.length; i++){
+           System.out.print(z[i]+" "); 
+        }
+        System.out.println("");
+        System.out.print("lihat : ");
+            lihat = masuk.nextInt();
+        System.out.println("--------------");
+        System.out.print("pilihlah : ");
+        for(int i = 0; i < z.length; i++){
+            if(lihat == z[i]){
+                System.out.print("index ke-: "+z[i]);
+                count++;
+            }
+            
+            }
+        
+        if(count == 0){
+                System.out.println("Data tidak ada");
+        
+        }
+    }
+    
+}
