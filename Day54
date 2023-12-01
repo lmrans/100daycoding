@@ -1,0 +1,27 @@
+package ngoding ;
+import java.util.Scanner;
+public class java54 {
+    public static void main(String[]args){
+        Scanner masuk = new Scanner(System.in);
+        String[]a = {"bakso","ayam","sapi","kelinci"};
+        String cari;
+        int conect = 0;
+        System.out.println("menu : ");
+        for(int i = 0; i<a.length;i++){
+            System.out.println((i+1)+"."+a[i]);
+        }
+        System.out.println("-------------");
+        System.out.print("cari : ");
+        cari = masuk.nextLine();
+        for(int i =0; i<a.length;i++){
+            if(cari.equals(a[i])){
+                System.out.print("kamu memilih "+a[i]);
+                conect++;
+            }
+        }
+        if(conect == 0){
+            System.out.print("menu tidak tersedia");
+        }
+    }
+    
+}
