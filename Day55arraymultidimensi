@@ -1,0 +1,16 @@
+package ngoding ;
+public class day55 {
+    public static void main(String[]args){
+        String a[][]={
+            {"ayam","sapi"},
+            {"apel","anggur"}};
+        System.out.println("Nama hewan: ");
+        System.out.println(a[0][0]);
+        System.out.println(a[0][1]);
+        System.out.println("==============\nNama buah: ");
+        System.out.println(a [1][0]);
+        System.out.println(a [1][1]);
+        
+    }
+    
+}
