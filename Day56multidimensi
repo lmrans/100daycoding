@@ -1,0 +1,18 @@
+package ngoding ;
+
+public class day56 {
+    public static void main(String[]args){
+        String [][] a = {
+            {"naruto ", "(kurama) ","(mode so6p)"},
+            {"killer b ","(gyuki)","(mode biju)"},
+            {"gaara "," (shukaku)"}};
+        for(int i = 0; i < a.length; i++){
+            for(int j = 0; j < a[i].length; j++){
+                System.out.print(a[i][j]);
+            }
+            System.out.println("");
+        }
+        
+        
+    }
+}
