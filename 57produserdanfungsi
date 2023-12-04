@@ -1,0 +1,15 @@
+package ngoding ;
+
+public class day57 {
+    public static void power(){
+        int umur = 19;
+        System.out.println("umur :"+umur);
+        String nama = "denis";
+        System.out.println("nama :"+nama);
+    }
+    
+    public static void main(String[]args){
+        power();
+        
+    }
+}
