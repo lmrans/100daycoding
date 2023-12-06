@@ -1,0 +1,20 @@
+package ngoding ;
+public class hari59 {
+    //prosedur
+    public static void hero(){
+       String nama = "gusion";
+        int damage = 4000;
+        System.out.println(nama+" - "+damage+" magic power");
+        //fungsi
+    }
+    public static String karakter(){
+        String nama = "alpha";
+        int damage = 5000;
+        return nama+" - "+damage+" physical ";
+    }
+    public static void main(String[]args){
+        hero();
+        System.out.println(karakter());
+    }
+    
+}
