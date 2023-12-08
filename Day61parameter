@@ -1,0 +1,19 @@
+package ngoding ;
+import java.util.Scanner;
+public class day61 {
+    public static String tipe(String hero, int damage){
+       return hero+" "+"memiliki damage sebesar "+damage+" ribu";
+    }
+    public static void main(String[]args){
+        String hr;
+        int burst;
+        Scanner java = new Scanner(System.in);
+        System.out.print("nama hero : ");
+        hr = java.nextLine();
+        System.out.print("damage    : ");
+        burst = java.nextInt();
+        System.out.println("-----------");
+        System.out.print(tipe(hr,burst));
+    }
+    
+}
