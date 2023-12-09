@@ -1,0 +1,23 @@
+package ngoding ;
+
+public class day62 {
+    public static void main(String[]args){
+        int[][]a = {{24,31,68},{55,83,99},{45,77,23}};
+        
+        int max = a[0][0];
+        int min = a[0][0];
+        for(int[]lord : a){
+            for(int queen : lord){
+                if(queen > max){
+                    max = queen;
+                }
+                if(queen < min){
+                    min = queen;
+                }
+            }
+        }
+        System.out.println("tertinggi : "+max);
+        System.out.println("terendah  : "+min);
+        
+    }
+}
