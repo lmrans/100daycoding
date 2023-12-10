@@ -1,0 +1,21 @@
+package ngoding ;
+import java.util.Scanner;
+public class day63 {
+    public static void main(String[]args){
+        Scanner masuk = new Scanner(System.in);
+        int nilai;
+        
+        do{
+            System.out.print("input nilai : ");
+            nilai = masuk.nextInt();
+            
+            if(nilai % 2 ==0){
+                System.out.print("genap program berhenti");
+                break;
+            }else{
+                System.out.print("ganjil ulang program");
+                System.out.println(" ");
+            }
+        }while(true);
+    }
+}
