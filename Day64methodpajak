@@ -1,0 +1,26 @@
+package ngoding ;
+import java.util.Scanner;
+public class day64 {
+    public static void main(String[]args){
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("penghasilan pertahunan: ");
+        double gaji = scanner.nextDouble();
+        double pajak = hitungPajak(gaji);
+        System.out.println("Pajak yang harus dibayar: " + pajak);
+        
+    } 
+    public static double hitungPajak(double penghasilan) {
+        double pajak = 0;
+
+        if (penghasilan <= 50000) {
+            pajak = 0.05 * penghasilan;
+        } else if (penghasilan <= 100000) {
+            pajak = 0.1 * penghasilan;
+        } else {
+            pajak = 0.15 * penghasilan;
+        }
+
+        return pajak;
+    }
+}
