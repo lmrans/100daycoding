@@ -1,0 +1,29 @@
+package ngoding ;
+import java.util.Scanner;
+public class day68 {
+    public static int Luaspersegi(int s){
+      int L = s*s;
+      return(L);  
+    }
+    public static int kelilingpersegi(int s){
+      int K = 4 * s;
+      return(K);  
+    }
+    public static void simpul(int s){
+        System.out.println("Rumus Luas = s × s");
+        System.out.println("L = "+s+" × "+s);
+        System.out.println("L = "+Luaspersegi(s));
+    }
+    public static void jurnal(int s){
+        System.out.println("Rumus keliling = 4 × s");
+        System.out.println("K = 4 × "+s);
+        System.out.println("K = "+kelilingpersegi(s));
+    }
+    public static void main(String[]args){
+        Scanner ms = new Scanner(System.in);
+        System.out.print("sisi dari persegi = ");
+        int s = ms.nextInt();
+        simpul(s);
+        jurnal(s);
+    }
+}
