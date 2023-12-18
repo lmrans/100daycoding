@@ -1,0 +1,33 @@
+package ngoding ;
+
+public class day71 {
+    public static double LuasL(double pi, double r){
+        double L = pi * r * r;
+        return(L);
+    }
+        public static double kelilingL(double pi, double r){
+            double d = 2 * r;
+            double K = pi * d;
+            return(K);
+        }
+            public static void LR(double pi, double r){
+              System.out.println("L = pi × r × r");
+            System.out.println("L = "+pi+" × "+ r +" × "+r);
+        System.out.println("L = "+LuasL(pi,r));
+}
+    public static void KR(double pi,double r){
+        double d = 2 * r;
+        System.out.println("K = pi × diameter");
+    System.out.println("K = "+pi+" × "+d);
+    System.out.println("L = "+kelilingL(pi,r));
+    }
+    
+    public static void main(String[]args){
+        final double pi = 3.14;
+        double r = 5;
+        LR(pi,r);
+        System.out.println("--------------");
+        KR(pi,r);
+    }
+    
+}
