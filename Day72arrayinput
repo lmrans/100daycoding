@@ -1,0 +1,14 @@
+package ngoding ;
+import java.util.*;
+public class day72 {
+    public static void main(String[]args){
+        String []nama = new String[10];
+        Scanner sc = new Scanner(System.in);
+        for(int i = 0; i < nama.length;i++){
+            System.out.print("nama mahasiswa ke - "+(i+1) +" : ");
+           String mh = sc.nextLine();
+            nama[i]= mh;
+        }
+System.out.print(Arrays.toString(nama));
+    }
+}
