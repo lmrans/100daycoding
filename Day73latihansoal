@@ -1,0 +1,26 @@
+package ngoding ;
+import java.util.Scanner;
+public class day73 {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan jumlah kehadiran pegawai: ");
+        int jumlahKehadiran = sc.nextInt();
+        int gajiBulanan = 5000000;
+        int potongan = 0;
+        int hariTanpaKeterangan = 0;
+        if (jumlahKehadiran < (30 - 5)) {
+            hariTanpaKeterangan = (30 - 5) - jumlahKehadiran;
+            potongan = 25000 * hariTanpaKeterangan;
+        }
+        int gajiBersih = gajiBulanan - potongan;
+        double pajak = 0.025 * gajiBersih;
+        gajiBersih -= pajak;
+        System.out.println("Besar gaji seorang karyawan perbulan: Rp. " + gajiBulanan);
+        System.out.println("Potongan karena tidak hadir: Rp. " + potongan);
+        System.out.println("Gaji bersih karyawan (setelah pajak 2.5%): Rp. " + gajiBersih);
+    
+        
+        
+    }
+}
