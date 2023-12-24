@@ -1,0 +1,23 @@
+package ngoding ;
+import java.util.Scanner;
+public class tugas4 {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("nilai : ");
+        int n = sc.nextInt();
+        int total = 0;
+        for(int i = 1; i<= n;i++){
+            total += i;
+            System.out.print(i);
+            if(i < n){
+                System.out.print("+");
+                
+            }
+            
+        }
+        System.out.print(" = "+total);
+        
+    }
+    
+    
+}
