@@ -1,0 +1,22 @@
+package ngoding ;
+import java.util.Scanner;
+public class tugas3 {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("angka 1 : ");
+        int a = sc.nextInt();
+        System.out.print("angka 2 : ");
+        int b = sc.nextInt();
+        int total = a + b;
+        if(total % 2 == 0){
+            total +=1;
+            System.out.print("hasil : "+total);
+        }else{
+           total += 2; 
+        System.out.print("hasil : "+total);
+        }
+        
+         
+    }
+    
+}
