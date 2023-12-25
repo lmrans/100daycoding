@@ -1,0 +1,26 @@
+package ngoding ;
+import java.util.Scanner;
+public class day78 {
+    public static int pangkat(int b, int p){
+        int hasil = b;
+        for(int i = 1; i < p;i++){
+            hasil *= b;
+        }
+        return hasil;
+    }
+    public static void rumus(int b,int p){
+        System.out.print(b+" pangkat "+p+" = ");
+        System.out.print(pangkat(b,p));
+    }
+    public static void main(String[]args){
+        int b, p;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("angka : ");
+        b = sc.nextInt();
+        System.out.print("pangkat : ");
+        p = sc.nextInt();
+        System.out.println("----------");
+        rumus(b,p);
+    }
+    
+}
