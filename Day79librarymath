@@ -1,0 +1,11 @@
+package ngoding ;
+
+public class day79 {
+    public static void main(String[]args){
+        int a = 50;
+        int b = 70;
+        double c = Math.max(a,b);
+        System.out.print(c);
+    }
+    
+}
