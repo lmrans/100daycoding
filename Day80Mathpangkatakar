@@ -1,0 +1,19 @@
+package ngoding ;
+import java.util.Scanner;
+public class day80 {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("nilai a = ");
+        int a = sc.nextInt();
+        double x = Math.sqrt(a);
+        System.out.println(" akar "+a+" = "+x);
+        System.out.println("-----------");
+        System.out.print("nilai c = ");
+        int c = sc.nextInt();
+        System.out.print("nilai d = ");
+        int d = sc.nextInt();
+        double z = Math.pow(c,d);
+        System.out.println(c+" pangkat "+d+" = "+z);
+    }
+    
+}
