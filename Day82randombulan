@@ -1,0 +1,24 @@
+package ngoding ;
+public class day82 {
+    public static void main(String[]args){
+        String bulan[] = {"januari",
+            "februari",
+            "maret",
+            "april",
+            "mei",
+            "juni",
+            "juli",
+            "agustus",
+            "september",
+            "oktober",
+            "november",
+            "desember"};
+        int a = 0;
+        int b = bulan.length-1;
+        for(int i = 0; i < 5; i++){
+         int lt = a + (int)(Math.random()*((b-a)+1));
+          System.out.println("bulan : "+bulan[lt]);  
+        }
+    }
+    
+}
