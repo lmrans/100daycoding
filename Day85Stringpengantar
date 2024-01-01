@@ -1,0 +1,9 @@
+package ngoding ;
+public class day85 {
+    public static void main(String[]args){
+        String hewan = "Mosasaurus x T-rex";
+        System.out.println(hewan.length());
+        System.out.println(hewan.toUpperCase());
+        System.out.println(hewan.toLowerCase());
+    }
+}
