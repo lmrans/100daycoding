@@ -1,0 +1,16 @@
+package ngoding ;
+
+public class day86 {
+    public static void main(String[]args){
+        String hwn = "harimau sumatra";
+        System.out.println("jumlah huruf  : "+hwn.length());
+        System.out.println("huruf kapital : "+hwn.toUpperCase());
+        System.out.println("huruf kecil   : "+hwn.toLowerCase());
+        System.out.println("char ke       : "+hwn.charAt(2));
+        String[]hrf = hwn.split(" ");
+        System.out.println("nama depan    : "+hrf[0]);
+        System.out.println("nama belakang : "+hrf[1]);
+        System.out.println("jumlah kata   : "+hrf.length);
+    }
+    
+}
