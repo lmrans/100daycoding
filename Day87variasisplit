@@ -1,0 +1,24 @@
+package ngoding ;
+import java.util.Scanner;
+public class day87 {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        String tgllhr;
+        System.out.print("input tanggal lahir : ");
+        tgllhr = sc.nextLine();
+        System.out.println("---------------");
+        
+        String[] n = tgllhr.split(" ");
+        String tgl = n[0];
+        String bln = n[1];
+        String thn = n[2];
+        System.out.println("\ntanggal\t : "+tgl);
+        System.out.println("bulan \t : "+bln);
+        System.out.println("tahun \t : "+thn);
+        
+        System.out.println("\n\n{ "+tgllhr+" }");
+        
+        
+    }
+    
+}
