@@ -1,0 +1,14 @@
+package ngoding ;
+class Bahan{
+    String nama = "imran";
+    int a = 10;
+}
+public class day88 {
+    public static void main(String[]args){
+        Bahan good = new Bahan();
+        good.a += 5;
+        System.out.println(good.a);
+        System.out.println(good.nama);
+    }
+    
+}
