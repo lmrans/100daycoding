@@ -1,0 +1,29 @@
+package ngoding ;
+import java.util.Arrays;
+public class day94 {
+    public static void main(String[]args){
+        int[] nilai1 = {1,2,3,4,5,6};
+        int[] nilai2 = new int[6];
+        System.out.println(nilai1);
+        System.out.println(nilai2);
+        nilai2 = nilai1;
+        System.out.println(nilai1);
+        System.out.println(nilai2);
+        System.out.println("nilai 1 ->"+Arrays.toString(nilai1));
+        System.out.println("nilai 2 ->"+Arrays.toString(nilai2));
+        nilai1[1] = 200;
+        nilai2[5] = 500;
+        System.out.println("nilai 1 ->"+Arrays.toString(nilai1));
+        System.out.println("nilai 2 ->"+Arrays.toString(nilai2));
+        
+        ganti(nilai1);
+        System.out.println("nilai 1 ->"+Arrays.toString(nilai1));
+        System.out.println("nilai 2 ->"+Arrays.toString(nilai2));
+        
+        
+    }
+    public static void ganti(int[] basearray){
+        basearray[3] = 225;
+    }
+    
+}
