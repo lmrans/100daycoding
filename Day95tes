@@ -1,0 +1,30 @@
+package ngoding ;
+import java.util.Scanner;
+public class day95 {
+    public static void main(String[]args){
+        Scanner war = new Scanner(System.in);
+        int pilihan;
+        do {
+            System.out.println("Pilih menu:");
+            System.out.println("1. bakso ");
+            System.out.println("2. nasi goreng ");
+            System.out.println("3. Keluar");
+            System.out.print("Masukkan pilihan Anda: ");
+            pilihan = war.nextInt();
+            switch (pilihan) {
+                case 1:
+                    System.out.println("Anda memilih Menu 1");
+                    break;
+                case 2:
+                    System.out.println("Anda memilih Menu 2");
+                    break;
+                case 3:
+                    System.out.println("maaf menu tidak tersedia.");
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid. Silakan coba lagi.");
+            }
+        } while (pilihan != 3);
+        
+    }
+}
