@@ -1,0 +1,23 @@
+package ngoding ;
+public class day96 {
+    
+           public static void tampilkanInfoHewan(String[][] hewan) {
+        int baris = 0;
+
+        while (baris < hewan.length) {
+            System.out.println("Hewan: " + hewan[baris][0] + ", Jumlah Kaki: " + hewan[baris][1]);
+            baris++;
+        }
+    }
+    public static void main(String[] args) {
+        String[][] hewan = {
+                {"Singa", "4"},
+                {"Gajah", "4"},
+                {"Ular", "0"},
+                {"Burung", "2"},
+                {"Katak", "4"}
+        };
+        tampilkanInfoHewan(hewan);
+        
+    }
+}
