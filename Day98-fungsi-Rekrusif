@@ -1,0 +1,31 @@
+package ngoding ;
+import java.util.*;
+public class day98 {
+    public static void main(String[]args){
+       Scanner sc = new Scanner(System.in);
+        System.out.print("masukkan nilai = ");
+        int nilai = sc.nextInt();
+        System.out.println("nilai anda = "+nilai);
+        
+        nilai(nilai);
+        int hasil = jumlah(nilai);
+        System.out.println("jumlah = "+ hasil);
+    }
+    
+    private static int jumlah(int parameter){
+        System.out.println("nilai = "+parameter);
+        if(parameter == 0){
+            return parameter;
+        }
+        return parameter + jumlah(parameter-1);
+    }
+    private static void nilai(int parameter){
+       System.out.println("parameter = "+parameter);
+        if(parameter == 0){
+            return;
+        }  
+        parameter--;
+        nilai(parameter);
+    }
+    
+}
