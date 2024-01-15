@@ -1,0 +1,26 @@
+package ngoding ;
+import java.util.Scanner;
+public class day99 {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int angka = sc.nextInt(); 
+
+        if (Prima(angka)) {
+            System.out.println(angka + " adalah bilangan prima.");
+        } else {
+            System.out.println(angka + " bukan bilangan prima.");
+        }
+    }
+    private static boolean Prima(int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
